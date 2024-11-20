@@ -18,6 +18,18 @@ public class Destino {
     private double mediaAvaliacao;
     private int totalAvaliacoes;
 
+    public Destino() {
+    }
+
+    public Destino(Long id, String nome, String localizacao, String descricao, double mediaAvaliacao, int totalAvaliacoes) {
+        this.id = id;
+        this.nome = nome;
+        this.localizacao = localizacao;
+        this.descricao = descricao;
+        this.mediaAvaliacao = mediaAvaliacao;
+        this.totalAvaliacoes = totalAvaliacoes;
+    }
+
     public Long getId() {
         return id;
     }

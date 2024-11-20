@@ -1,4 +1,4 @@
-package com.example.api_restful.controller;
+package com.example.api_resful.controller;
 
 
 import com.example.api_resful.entity.Destino;
