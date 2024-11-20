@@ -1,25 +1,14 @@
-package com.example.api_resful.entity;
+package com.example.api_resful.dto;
 
-import jakarta.persistence.*;
+public class UserDTO {
 
-
-@Entity
-@Table(name = "users")
-public class User {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = true)
     private String username;
 
-    @Column(nullable = false)
     private String password;
 
-    @Column(nullable = false)
     private String role;
-
 
     public Long getId() {
         return id;
@@ -53,4 +42,3 @@ public class User {
         this.role = role;
     }
 }
-
